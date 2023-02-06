@@ -1,0 +1,13 @@
+name: windoof Beispiel :)
+
+on:
+  push
+
+jobs:
+  build:
+    name: Post welcome comment
+    runs-on: windows-latest
+    steps:
+      - run: dir
+      - run: echo "Hallo Alfa"
+      - run: docker run hello-world
